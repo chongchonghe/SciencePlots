@@ -1,0 +1,56 @@
+# Matplotlib style for Keynote presentations
+# Optimized for clear visibility when figure occupies partial slide space
+# with large fonts and elements for viewing at a distance
+
+# Set color cycle: blue, green, yellow, red, violet, gray
+axes.prop_cycle : cycler('color', ['0C5DA5', '00B945', 'FF9500', 'FF2C00', '845B97', '474747', '9e9e9e'])
+
+# Figure size - compact for partial slide coverage
+figure.figsize : 6, 4.5  # Smaller size since figure won't take full slide
+
+# Font sizes - larger for distance viewing but not overwhelming
+axes.labelsize: 18
+xtick.labelsize: 16
+ytick.labelsize: 16
+legend.fontsize: 16
+font.size: 16
+
+# Font Family - keep sans-serif for readability
+font.family: sans-serif
+font.sans-serif: Arial, Helvetica, DejaVu Sans, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+mathtext.fontset : dejavusans
+
+# Set x axis - visible but balanced
+xtick.direction : in
+xtick.major.size : 6
+xtick.major.width : 1.5
+xtick.minor.size : 3.5
+xtick.minor.width : 1.2
+xtick.minor.visible : True
+xtick.top : True
+
+# Set y axis - visible but balanced
+ytick.direction : in
+ytick.major.size : 6
+ytick.major.width : 1.5
+ytick.minor.size : 3.5
+ytick.minor.width : 1.2
+ytick.minor.visible : True
+ytick.right : True
+
+# Set line widths - clear for projections but not too thick
+axes.linewidth : 1.5
+grid.linewidth : 1.2
+lines.linewidth : 2.0
+lines.markersize: 10
+
+# Remove legend frame
+legend.frameon : False
+
+# Always save as 'tight'
+savefig.bbox : tight
+savefig.pad_inches : 0.2
+
+# LaTeX packages - but consider setting text.usetex to False for faster rendering during presentation development
+text.usetex : True
+text.latex.preamble : \usepackage{amsmath} \usepackage{amssymb} \usepackage{sfmath} 
